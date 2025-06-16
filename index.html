@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lowongan Pekerjaan</title>
+  <style>
+    /* CSS tetap sama seperti sebelumnya */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    * {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #db94ec;
+      color: #333;
+      margin: 0;
+    }
+
+    .wrapper {
+      width: 1100px;
+      margin: auto;
+      position: relative;
+    }
+
+    .logo a {
+      font-size: 50px;
+      font-weight: 800;
+      float: left;
+      font-family: courier;
+      color: #364f6b;
+    }
+
+    .menu {
+      float: right;
+    }
+
+    nav {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      line-height: 80px;
+      position: sticky;
+      top: 0;
+      background: #87cbf0;
+      z-index: 1;
+      border-bottom: 1px solid #364f6b;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      float: left;
+    }
+
+    nav ul li a {
+      color: black;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 16px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin: auto;
+      display: flex;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .kolom {
+      flex: 1;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .kolom .deskripsi {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Comic Sans MS';
+      color: #364f6b;
+    }
+
+    h2 {
+      font-family: 'Comic Sans MS';
+      font-weight: 800;
+      font-size: 45px;
+      margin-bottom: 20px;
+      color: #364f6b;
+      line-height: 50px;
+    }
+
+    a.tbl-biru, a.tbl-pink {
+      border-radius: 20px;
+      margin-top: 20px;
+      padding: 15px 20px;
+      color: hsl(0, 0%, 98%);
+      cursor: pointer;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    a.tbl-biru {
+      background: #3f72af;
+    }
+
+    a.tbl-biru:hover {
+      background: #51c9fccc;
+      text-decoration: none;
+    }
+
+    a.tbl-pink {
+      background: #fc5185;
+    }
+
+    a.tbl-pink:hover {
+      background: #3f72af;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 10px 0;
+      padding: 10px 0;
+    }
+
+    .tengah {
+      text-align: center;
+      width: 100%;
+    }
+
+    #contact {
+      background: #a84d4d;
+      padding: 50px 0;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-section {
+      flex: 1 1 22%;
+      margin: 10px;
+    }
+
+    h3 {
+      font-family: 'Comic Sans MS';
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #364f6b;
+      line-height: 50px;
+    }
+
+    #copyright {
+      text-align: center;
+      width: 100%;
+      padding: 30px 0;
+      background-color: #f1f1f1;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 991.98px) {
+      .wrapper {
+        width: 90%;
+      }
+
+      .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      nav .menu {
+        width: 100%;
+        margin: 0;
+      }
+
+      nav .menu ul {
+        text-align: center;
+        line-height: 60px;
+      }
+
+      nav .menu ul li {
+        display: inline-block;
+        float: none;
+      }
+
+      section {
+        display: block;
+      }
+
+      section img {
+        width: 100%;
+        height: auto;
+      }
+
+      .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="wrapper">
+    <div class="logo"><a href="">InfoKarir.id</a></div>
+    <div class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#lowongan">Lowongan</a></li>
+        <li><a href="#syarat">Syarat</a></li>
+        <li><a href="#lamaran">Cara Lamar</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper">
+  <!-- Home Section -->
+  <section id="home">
+    <img src="https://img.freepik.com/free-vector/job-interview-illustration_52683-43379.jpg" alt="Lowongan Pekerjaan"/>
+    <p class="deskripsi">Temukan Karier Impianmu</p>
+    <h2>Lowongan Pekerjaan Terbaru</h2>
+    <p>Dapatkan informasi lowongan kerja terbaru dari berbagai bidang mulai dari pendidikan, teknologi, hingga bisnis. Temukan pekerjaan yang sesuai dengan minat dan keterampilanmu.</p>
+    <p><a href="#lowongan" class="tbl-pink">Lihat Lowongan</a></p>
+  </section>
+
+  <!-- Lowongan Section -->
+  <section id="lowongan">
+    <div class="kolom">
+      <p class="deskripsi">Daftar Posisi</p>
+      <h2>Lowongan Tersedia</h2>
+      <ul>
+        <li>Guru Matematika - SMA Harapan Bangsa</li>
+        <li>Desainer UI/UX - TechID Digital</li>
+        <li>Customer Service - PT Solusi Prima</li>
+        <li>Marketing Online - Toko Buku Kita</li>
+      </ul>
+      <p><a href="#syarat" class="tbl-biru">Lihat Syarat</a></p>
+    </div>
+  </section>
+
+  <!-- Syarat Section -->
+  <section id="syarat">
+    <div class="tengah">
+      <div class="kolom">
+        <p class="deskripsi">Kualifikasi Umum</p>
+        <h2>Syarat & Ketentuan</h2>
+        <ul>
+          <li>Minimal lulusan SMA/SMK/D3/S1 (tergantung posisi)</li>
+          <li>Mampu bekerja dalam tim dan individu</li>
+          <li>Memiliki kemampuan komunikasi yang baik</li>
+          <li>Bersedia ditempatkan di seluruh Indonesia</li>
+        </ul>
+        <p><a href="#lamaran" class="tbl-pink">Cara Melamar</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lamaran Section -->
+  <section id="lamaran">
+    <div class="tengah">
+      <div class="kolom">
+        <p class="deskripsi">Kirim CV Anda</p>
+        <h2>Langkah Melamar</h2>
+        <p>1. Siapkan CV terbaru dan surat lamaran kerja.</p>
+        <p>2. Kirim melalui email ke: <strong>karir@infokarir.id</strong> atau isi formulir pendaftaran di website resmi masing-masing perusahaan.</p>
+        <p>3. Tunggu panggilan untuk proses wawancara.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+  <div class="wrapper">
+    <div class="footer">
+      <div class="footer-section">
+        <h3>InfoKarir.id</h3>
+        <p>Portal informasi lowongan kerja terpercaya untuk seluruh Indonesia.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Tentang Kami</h3>
+        <p>Kami menyediakan info lowongan terbaru dan tips karier bagi pencari kerja.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Kontak</h3>
+        <p>Jl. Gang Dian, Padangsidimpuan Tenggara</p>
+        <p>Kode Pos: 21128</p>
+      </div>
+      <div class="footer-section">
+        <h3>Sosial Media</h3>
+        <p><b>Nama:</b>Devitri Novalia Psb, Dini Puspita Sormin, Renita Sitompul</a></p>
+        <p><b>Email:</b> karir@infokarir.id</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright -->
+<div id="copyright">
+  <div class="wrapper">
+    &copy; 2025 <b>InfoKarir.id.</b> All Rights Reserved.
+  </div>
+</div>
+
+</body>
+</html>
